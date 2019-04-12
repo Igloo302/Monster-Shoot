@@ -13,8 +13,6 @@
 		03EC4E76226057D1005AA96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC4E74226057D1005AA96F /* Main.storyboard */; };
 		03EC4E78226057D3005AA96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EC4E77226057D3005AA96F /* Assets.xcassets */; };
 		03EC4E7B226057D3005AA96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EC4E79226057D3005AA96F /* LaunchScreen.storyboard */; };
-		03EC4E86226057D3005AA96F /* Monster_ShootTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4E85226057D3005AA96F /* Monster_ShootTests.swift */; };
-		03EC4E91226057D3005AA96F /* Monster_ShootUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EC4E90226057D3005AA96F /* Monster_ShootUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +42,7 @@
 		03EC4E7A226057D3005AA96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03EC4E7C226057D3005AA96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC4E81226057D3005AA96F /* Monster ShootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monster ShootTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03EC4E85226057D3005AA96F /* Monster_ShootTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster_ShootTests.swift; sourceTree = "<group>"; };
-		03EC4E87226057D3005AA96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03EC4E8C226057D3005AA96F /* Monster ShootUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Monster ShootUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03EC4E90226057D3005AA96F /* Monster_ShootUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster_ShootUITests.swift; sourceTree = "<group>"; };
-		03EC4E92226057D3005AA96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				03EC4E6D226057D1005AA96F /* Monster Shoot */,
-				03EC4E84226057D3005AA96F /* Monster ShootTests */,
-				03EC4E8F226057D3005AA96F /* Monster ShootUITests */,
 				03EC4E6C226057D1005AA96F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,24 +100,6 @@
 				03EC4E7C226057D3005AA96F /* Info.plist */,
 			);
 			path = "Monster Shoot";
-			sourceTree = "<group>";
-		};
-		03EC4E84226057D3005AA96F /* Monster ShootTests */ = {
-			isa = PBXGroup;
-			children = (
-				03EC4E85226057D3005AA96F /* Monster_ShootTests.swift */,
-				03EC4E87226057D3005AA96F /* Info.plist */,
-			);
-			path = "Monster ShootTests";
-			sourceTree = "<group>";
-		};
-		03EC4E8F226057D3005AA96F /* Monster ShootUITests */ = {
-			isa = PBXGroup;
-			children = (
-				03EC4E90226057D3005AA96F /* Monster_ShootUITests.swift */,
-				03EC4E92226057D3005AA96F /* Info.plist */,
-			);
-			path = "Monster ShootUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,13 +170,16 @@
 				TargetAttributes = {
 					03EC4E6A226057D1005AA96F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					03EC4E80226057D3005AA96F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 03EC4E6A226057D1005AA96F;
 					};
 					03EC4E8B226057D3005AA96F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 03EC4E6A226057D1005AA96F;
 					};
 				};
@@ -269,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EC4E86226057D3005AA96F /* Monster_ShootTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +253,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03EC4E91226057D3005AA96F /* Monster_ShootUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +420,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-Shoot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -463,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-Shoot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -483,7 +458,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-ShootTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monster Shoot.app/Monster Shoot";
 			};
@@ -504,7 +479,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-ShootTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monster Shoot.app/Monster Shoot";
 			};
@@ -524,7 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-ShootUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Monster Shoot";
 			};
@@ -544,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igloo.Monster-ShootUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Monster Shoot";
 			};

@@ -14,6 +14,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    @IBAction func Shoot(_ sender: UIButton) {
+        print("Shoot")
+        sceneView.scene = SCNScene.init()
+        
+        let image = sceneView.snapshot()
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
+        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        sceneView.scene = scene
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +33,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        //sceneView.showsStatistics = true
         
         // Create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
@@ -47,6 +59,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
+    
     // MARK: - ARSCNViewDelegate
     
 /*
